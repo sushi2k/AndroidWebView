@@ -8,6 +8,16 @@
 	 	//check if JavaScript is activated
 		alert(42);
 		
+		var file = "file:///data/data/org.owasp.mstg.android/files/debug.txt";
+var xhr = new XMLHttpRequest();
+xhr.overrideMimeType("text/plain; charset=iso-8859-1");
+xhr.open("GET", file, true);
+xhr.onreadystatechange = function() {
+ var data = xhr.responseText;
+ alert(data);
+}
+xhr.send();
+		
 		var result = window.Android.returnString();
 		document.getElementById("p1").innerHTML = result;
 		
