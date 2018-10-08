@@ -6,7 +6,7 @@
 <input type="button" value="Press here to trigger Toast Message" onclick="fireToastMessage()" />
 	<script>
 	 	//check if JavaScript is activated
-		alert(43);
+		//alert(43);
 		
 		var file = "file://storage/emulated/0/password.txt";
 var xhr = new XMLHttpRequest();
@@ -14,7 +14,7 @@ xhr.overrideMimeType("text/plain; charset=iso-8859-1");
 xhr.open("GET", file, true);
 xhr.onreadystatechange = function() {
  var data = xhr.responseText;
- alert(data);
+// alert(data);
 }
 xhr.send();
 		
